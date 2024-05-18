@@ -1,37 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-text-decoration: none;
-list-style: none;
-}
-body{
-    font-family: "Roboto", sans-serif;
-    background-image: linear-gradient(#3601CD,#3601CD,black);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
-img{
+body {
+    font-family: "Roboto", sans-serif;
+    background-image: linear-gradient(#3601CD, #3601CD, black);
+}
+
+img {
     max-width: 100%;
 }
-.container{
+
+.container {
     max-width: 1620px;
     margin: 0 auto;
 }
-.header{
+
+.header {
     background-image: url(music.png);
-    
+
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
     min-height: 100vh;
-    
-    
-    
 }
-.menu{
+
+.menu {
     background-color: rgb(0, 0, 0);
     max-width: 1910px;
     position: absolute;
@@ -42,76 +43,82 @@ img{
     align-items: center;
     justify-content: space-between;
     height: 75px;
-    
 }
 
-.logo{
+.logo {
     margin-top: -4px;
     color: azure;
     font-weight: 0;
     padding: 0px;
-    width: 150px; 
+    width: 150px;
     height: 50px;
-    
 }
 
-.menu .navbar ul li{
+.menu .navbar ul li {
     margin-top: 25px;
     position: relative;
     float: left;
 }
+
 .menu .navbar ul li a {
-    
-font-size: 18px;
-padding: 22px;
-color: rgb(255, 255, 255);
-font-weight: 450;
-display: block;
-text-decoration: none;
+
+    font-size: 18px;
+    padding: 22px;
+    color: rgb(255, 255, 255);
+    font-weight: 450;
+    display: block;
+    text-decoration: none;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(107, 107, 230);
 
 }
 
-.menu .navbar ul li a:hover{
-    color:rgb(107, 107, 230);
-    
-}
-#menu{
+#menu {
     display: none;
 }
-.menu-icono{
+
+.menu-icono {
     width: 25px;
 }
-.menu label{
+
+.menu label {
     cursor: pointer;
     display: none;
 }
-.header-content{
+
+.header-content {
     display: flex;
 }
-.header-txt{
+
+.header-txt {
     flex-basis: 70%;
 }
 
-.header-txt h1{
+.header-txt h1 {
     font-size: 130px;
     color: white;
     line-height: 1.1;
     margin-bottom: 40px;
-    
-}
-.header-txt span{
-    color: #3601CD;
-}
-.header-txt p {
-font-size: 28px;
-color: rgb(155, 155, 155);
-margin-bottom: 45px;
+
 }
 
+.header-txt span {
+    color: #3601CD;
+}
+
+.header-txt p {
+    font-size: 28px;
+    color: rgb(155, 155, 155);
+    margin-bottom: 45px;
+}
 .butons {
     display: flex;
 }
-.btn-1, .btn-2, .btn-3{
+.btn-1,
+.btn-2,
+.btn-3 {
     display: inline-block;
     padding: 20px 70px;
     font-size: 25px;
@@ -121,89 +128,112 @@ margin-bottom: 45px;
     text-decoration: none;
 
 }
-.btn-1:hover{
+
+.btn-1:hover {
     background-color: aqua;
     color: blue;
 }
 
-.popular{
-    
-    padding: 20px;
-    text-align: center;
-}
 h1 {
     font-size: 35px;
     margin-top: 10px;
     margin-bottom: 10px;
     color: rgb(255, 255, 255);
 }
+ /* Artistas tendencia */
+ .popular {
+    padding: 20px;
+    text-align: center;
+}
 .popular-content {
     display: flex;
-    
-  overflow: hidden;
-    
+    overflow: hidden;
 }
-.popular-content img{
-    
-  height: 600px;
+.popular-content img {
+    height: 600px;
     padding: 10px;
     width: 350px;
+}
+/*------------------------------------------*/
+
+ /* Albumes que no paran de sonar */
+.product {
+    font-size: 25px;
+    color: white;
 
 }
-
-.product-content{
-    gap: 50px;
+.product-1 img {
+    border-radius: 0%;
 }
-
-.product-1 img{
-    margin-top: 12px;
-    margin-right:46px;
-    max-width: 390px;
-    max-height: 300px;
-}
+.card {
+    background-color: transparent;
+    color: white;
+    width: 300px;
+    height: auto;
+    display: block;
+  }
+  
+  .card img{
+    align-items: center;
+  }
+  
+  .card .card-img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+    color: white; /* Color del texto */
+    box-sizing: border-box;
+    padding-top: 72%;
+  }
+  
 .product-1 {
     background-image: url(anuel.png);
-    position: relative; /* Añade posición relativa para poder posicionar el texto dentro */
+    position: relative;
+    /* Añade posición relativa para poder posicionar el texto dentro */
     display: flex;
-    
     background-size: 100% 1200px;
     padding: 10px;
-    padding-left: 140px;
-    padding-top: 400px;
+    padding-left: 80px;
+    padding-top: 420px;
     background-repeat: no-repeat;
     width: 1903px;
     height: 760px;
-    
 }
-
 
 .product-1 .text-overlay {
-    position: absolute; /* Para posicionar el texto de manera absoluta */
-    top: 250px; /* Ajusta la posición del texto verticalmente */
-    left: 140px; /* Ajusta la posición del texto horizontalmente */
-    color: white; /* Color del texto */
-    font-size: 30px; /* Tamaño del texto */
-    font-weight: bold; /* Peso del texto */
-    
+    position: absolute;
+    /* Para posicionar el texto de manera absoluta */
+    top: 250px;
+    /* Ajusta la posición del texto verticalmente */
+    left: 140px;
+    /* Ajusta la posición del texto horizontalmente */
+    color: white;
+    /* Color del texto */
+    font-size: 30px;
+    /* Tamaño del texto */
+    font-weight: bold;
+    /* Peso del texto */
 }
-.product-1 .text-overlay h2{
+
+.product-1 .text-overlay h2 {
     font-weight: 300;
 }
 
+/*------------------------------------------*/
 
-
-
-
-
-
-.product-2 img{
+.product-2 img {
     margin-top: 12px;
-    margin-right:46px;
+    margin-right: 46px;
     max-width: 390px;
     max-height: 300px;
 }
+
 .product-2 {
-    position: relative; /* Añade posición relativa para poder posicionar el texto dentro */
+    position: relative;
+    /* Añade posición relativa para poder posicionar el texto dentro */
     display: flex;
     background-image: url(billie.png);
     background-size: 100% 1000px;
@@ -213,77 +243,84 @@ h1 {
     background-repeat: no-repeat;
     width: 1903px;
     height: 760px;
-    
+
 }
 
 
 .product-2 .text-overlay {
-    position: absolute; /* Para posicionar el texto de manera absoluta */
-    top: 250px; /* Ajusta la posición del texto verticalmente */
-    left: 140px; /* Ajusta la posición del texto horizontalmente */
-    color: white; /* Color del texto */
-    font-size: 30px; /* Tamaño del texto */
-    font-weight: bold; /* Peso del texto */
-    
+    position: absolute;
+    /* Para posicionar el texto de manera absoluta */
+    top: 250px;
+    /* Ajusta la posición del texto verticalmente */
+    left: 140px;
+    /* Ajusta la posición del texto horizontalmente */
+    color: white;
+    /* Color del texto */
+    font-size: 30px;
+    /* Tamaño del texto */
+    font-weight: bold;
+    /* Peso del texto */
+
 }
-.product-2 .text-overlay h2{
+
+.product-2 .text-overlay h2 {
     font-weight: 300;
 }
 
-.container {
-    font-size: 25px;
-color: white;
 
-
+.popular .control {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.295);
+    cursor: pointer;
+    object-fit: cover;
+    padding: 9px;
 }
 
-.popular .control{
-position: absolute;
-width:  50px;
-height: 50px;
-border-radius: 50%;
-background-color: rgba(0, 0, 0, 0.295);
-cursor: pointer;
-object-fit: cover;
-padding: 9px;
-}
-.popular .prev{
+.popular .prev {
     left: 0;
 
     top: 55%;
-    transform: translate(-0%,1550%);
+    transform: translate(-0%, 1550%);
 }
-.popular .next{
+
+.popular .next {
     right: 0;
 
     top: 55%;
-    transform: translate(-0%,1550%);
+    transform: translate(-0%, 1550%);
 }
 
-.container-preg{
+.container-preg {
     width: 90%;
     margin: 100px auto;
-    
+
 
 }
-.container-faq{
+
+.container-faq {
     background-color: #12023E;
     box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.089);
     padding: 30px;
 
 }
-.container-faq .tittle-faq{
+
+.container-faq .tittle-faq {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 30px;
     color: white;
 }
-.container-faq .item-faq{
-box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
-margin-bottom: 20px;
-border-radius: 10px;
-color: white;
+
+.container-faq .item-faq {
+    box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: white;
 }
+
 .container-faq .item-faq .question {
     font-size: 20px;
     position: relative;
@@ -294,7 +331,8 @@ color: white;
     padding: 20px 20px 20px 80px;
     transition: .4s;
 }
-.container-faq .item-faq .question .more{
+
+.container-faq .item-faq .question .more {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -304,146 +342,151 @@ color: white;
     font-size: 1rem;
     cursor: pointer;
     transition: .4s;
-
 }
 
 
-.container-faq .item-faq .question span{
-    
+.container-faq .item-faq .question span {
     position: absolute;
     left: 3px;
     width: 70px;
     top: 5px;
-    
-    
 }
+
 .container-faq .item-faq .answer {
     position: relative;
     padding: 0 20px 0 80px;
     overflow: hidden;
-   
+
     transition: .4s;
 }
-.container-faq .item-faq .answer p{
+
+.container-faq .item-faq .answer p {
     font-size: 1.3rem;
 }
+
 .container-faq .item-faq .answer span {
     position: absolute;
     left: 35px;
-    
+
     top: -5px;
 }
 
-.contact{
+.contact {
     padding: 150px 300px;
 }
-.contact-content{
+
+.contact-content {
     background-color: #3630446b;
     text-align: center;
     padding: 50px;
     border-radius: 50px;
 }
-form{
+
+form {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    
+
 }
 
-.accordion h3{
+.accordion h3 {
     text-align: center;
     font-size: 60px;
     background-color: #ffffff00;
     margin-bottom: 40px;
 }
 
-.accordion-item{
+.accordion-item {
     background-color: transparent;
     color: aliceblue;
     border: none;
     margin-bottom: 30px;
-    
+
 }
-.accordion{
-    
-    width: 80%; /* Cambia el ancho según desees */
-    margin: 0 auto; /* Esto centrará horizontalmente la sección */
-    margin-top: 100px; /* Agrega margen superior según necesites */
-    margin-bottom: 10px; /* Agrega margen inferior según necesites */
-    
+
+.accordion {
+
+    width: 80%;
+    /* Cambia el ancho según desees */
+    margin: 0 auto;
+    /* Esto centrará horizontalmente la sección */
+    margin-top: 100px;
+    /* Agrega margen superior según necesites */
+    margin-bottom: 10px;
+    /* Agrega margen inferior según necesites */
+
 }
-.accordion-body{
+
+.accordion-body {
     background-color: #12023E;
 }
-.accordion-button{
+
+.accordion-button {
     background-color: #12023E;
     font-size: 27px;
     color: white;
 }
-.accordion-item .accordion-button::before {
-    content: url('1.png'); /* Ruta de la imagen del número 1 */
 
-    margin-right: 10px; /* Ajusta el margen derecho para separar la imagen del texto */
+.accordion-item .accordion-button::before {
+    content: url('1.png');
+    /* Ruta de la imagen del número 1 */
+
+    margin-right: 10px;
+    /* Ajusta el margen derecho para separar la imagen del texto */
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-footer{
+footer {
     background-color: black;
 }
 
 
 
 
-
-
-
-
-
 @media(max-width:911px) {
-    .menu{
+    .menu {
         padding: 20px;
     }
+
     .menu label {
         display: initial;
     }
-    .menu .navbar{
+
+    .menu .navbar {
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
-        background-color:rgb(39, 3, 167) ;
+        background-color: rgb(39, 3, 167);
         display: none;
     }
-    .menu .navbar ul li a:hover{
-        color:rgb(0, 0, 0);
+
+    .menu .navbar ul li a:hover {
+        color: rgb(0, 0, 0);
 
     }
+
     .menu .navbar ul li {
-       width: 100%; 
+        width: 100%;
     }
-    #menu:checked ~ .navbar{
+
+    #menu:checked~.navbar {
         display: initial;
     }
-    .header{
+
+    .header {
         min-height: 0vh;
         padding: 80px 30px 50px 30px;
     }
-    .header-txt{
+
+    .header-txt {
         text-align: center;
         flex-basis: 100%;
     }
-    .header-txt h1{
+
+    .header-txt h1 {
         font-size: 50px;
         margin-bottom: 14;
     }
