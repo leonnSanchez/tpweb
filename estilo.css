@@ -116,9 +116,7 @@ img {
 .butons {
     display: flex;
 }
-.btn-1,
-.btn-2,
-.btn-3 {
+.btn-1{
     display: inline-block;
     padding: 20px 70px;
     font-size: 25px;
@@ -196,7 +194,7 @@ h1 {
     display: flex;
     background-size: 100% 1200px;
     padding: 10px;
-    padding-left: 80px;
+    padding-left: 120px;
     padding-top: 420px;
     background-repeat: no-repeat;
     width: 1903px;
@@ -372,21 +370,69 @@ h1 {
 }
 
 .contact {
-    padding: 150px 300px;
+    
+    margin-bottom: 100px
+}
+.formulario{
+    align-self: end;
+    display: flex;
+    background-color: #3630446b;
+    border-radius:50px ;
+    padding: 50px;
+    text-align: justify;
+    color: white;
+    
+}
+.textocta{
+    color:white;
+}
+.textocta h3{
+    font-size: 100px;
 }
 
-.contact-content {
-    background-color: #3630446b;
-    text-align: center;
-    padding: 50px;
-    border-radius: 50px;
-}
+
 
 form {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    flex-direction: column;
 
+}
+::placeholder{
+    color: rgb(163, 163, 163);
+}
+input{
+    padding:18px 25px;
+    background-color: #0a0027;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    color: white;
+    font-size: 17px;
+}
+hr {
+    border: none; /* Elimina el borde predeterminado */
+    border-top: 2px solid #9b9b9b; /* Define el estilo de la línea */
+    margin: 100px 0; /* Ajusta el margen superior e inferior */
+}
+.btn-3{
+    background-color: rgb(255, 208, 0);
+    color: black;
+    font-size: 27px;
+    display: inline-block;
+    padding: 20px 100px;
+    margin: 0 auto;
+    font-size: 25px;
+    border-radius: 30pc;
+    text-decoration: none;
+    font-weight: 500;
+    
+}
+.btn-3:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .accordion h3 {
@@ -440,6 +486,32 @@ form {
 
 footer {
     background-color: black;
+    
+}
+.link img{
+    padding: 10px 25px;
+}
+.apps{
+    display: flex;
+    justify-content:baseline;
+    padding: 25px;
+    
+}
+.apps img{
+    cursor: pointer;
+    opacity: 0.7;
+    margin-right: 50px;
+}
+.apps img:hover{
+    opacity: initial;
+}
+
+.grupo-2{
+    background-color: #0C0C0C;
+    color: #C5C5C5;
+    padding: 15px 10px;
+    font-size: 18px;
+    text-align: center;
 }
 
 
