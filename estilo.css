@@ -10,7 +10,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    background-image: linear-gradient(#3601CD, #3601CD, black);
+    background-image: linear-gradient(#3601CD, #3601CD, #09001f);
 }
 
 img {
@@ -23,14 +23,17 @@ img {
 }
 
 .header {
-    background-image: url(music.png);
-
+    background-color: #0C0C0C;
+    background-image: url(landing.png);
+    /* Ajusta los valores de rgba según desees para el color y la opacidad */
+    
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
     min-height: 100vh;
 }
+
 
 .menu {
     background-color: rgb(0, 0, 0);
@@ -105,16 +108,17 @@ img {
 }
 
 .header-txt span {
-    color: #3601CD;
+    color: #0795FC;
 }
 
 .header-txt p {
     font-size: 28px;
-    color: rgb(155, 155, 155);
+    color: rgb(196, 196, 196);
     margin-bottom: 45px;
 }
 .butons {
     display: flex;
+
 }
 .btn-1{
     display: inline-block;
@@ -149,7 +153,7 @@ h1 {
 }
 .popular-content img {
     height: 600px;
-    padding: 10px;
+    padding: 18px;
     width: 350px;
 }
 /*------------------------------------------*/
@@ -158,17 +162,20 @@ h1 {
 .product {
     font-size: 25px;
     color: white;
+    
 
 }
 .product-1 img {
     border-radius: 0%;
+    border: none;
 }
 .card {
     background-color: transparent;
-    color: white;
+    
     width: 300px;
     height: auto;
     display: block;
+    border: none;
   }
   
   .card img{
@@ -187,19 +194,28 @@ h1 {
     padding-top: 72%;
   }
   
+  .product-1 img {
+    margin-top: 12px;
+    margin-right: 46px;
+    max-width: 390px;
+    max-height: 300px;
+}
+
 .product-1 {
-    background-image: url(anuel.png);
     position: relative;
     /* Añade posición relativa para poder posicionar el texto dentro */
     display: flex;
-    background-size: 100% 1200px;
+    background-image: url(fondo.png);
+    background-size: 100% 1000px;
     padding: 10px;
-    padding-left: 120px;
-    padding-top: 420px;
+    padding-left: 122px;
+    padding-top: 400px;
     background-repeat: no-repeat;
     width: 1903px;
     height: 760px;
+
 }
+
 
 .product-1 .text-overlay {
     position: absolute;
@@ -208,17 +224,19 @@ h1 {
     /* Ajusta la posición del texto verticalmente */
     left: 140px;
     /* Ajusta la posición del texto horizontalmente */
-    color: white;
+    
     /* Color del texto */
     font-size: 30px;
     /* Tamaño del texto */
-    font-weight: bold;
+    font-weight:200;
     /* Peso del texto */
+
 }
 
 .product-1 .text-overlay h2 {
-    font-weight: 300;
+    font-weight: 200;
 }
+
 
 /*------------------------------------------*/
 
@@ -233,10 +251,10 @@ h1 {
     position: relative;
     /* Añade posición relativa para poder posicionar el texto dentro */
     display: flex;
-    background-image: url(billie.png);
+    background-image: url(SECCION\ 2\ WOS\ FONDO\ \(1\).png);
     background-size: 100% 1000px;
     padding: 10px;
-    padding-left: 140px;
+    padding-left: 122px;
     padding-top: 400px;
     background-repeat: no-repeat;
     width: 1903px;
@@ -248,11 +266,11 @@ h1 {
 .product-2 .text-overlay {
     position: absolute;
     /* Para posicionar el texto de manera absoluta */
-    top: 250px;
+    top: 240px;
     /* Ajusta la posición del texto verticalmente */
     left: 140px;
     /* Ajusta la posición del texto horizontalmente */
-    color: white;
+    
     /* Color del texto */
     font-size: 30px;
     /* Tamaño del texto */
@@ -262,7 +280,7 @@ h1 {
 }
 
 .product-2 .text-overlay h2 {
-    font-weight: 300;
+    font-weight: 200;
 }
 
 
@@ -371,7 +389,7 @@ h1 {
 
 .contact {
     
-    margin-bottom: 100px
+    margin-bottom: 100px;
 }
 .formulario{
     align-self: end;
@@ -383,12 +401,24 @@ h1 {
     color: white;
     
 }
+.formulario h2{
+    font-size: 23px;
+}
 .textocta{
     color:white;
+
+    
 }
 .textocta h3{
     font-size: 100px;
+    
+
 }
+.textocta p{
+    padding-top: 35px;
+    font-size: 28px;
+}
+
 
 
 
@@ -420,14 +450,14 @@ hr {
 .btn-3{
     background-color: rgb(255, 208, 0);
     color: black;
-    font-size: 27px;
+    font-size: 28px;
     display: inline-block;
     padding: 20px 100px;
     margin: 0 auto;
-    font-size: 25px;
+    font-size: 30px;
     border-radius: 30pc;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     
 }
 .btn-3:hover {
@@ -466,12 +496,17 @@ hr {
 .accordion-body {
     background-color: #12023E;
 }
+.accordion-body {
+    font-size: 24px;
+}
+
 
 .accordion-button {
-    background-color: #12023E;
-    font-size: 27px;
+    background-color: #15014d;
+    font-size: 32px;
     color: white;
 }
+
 
 .accordion-item .accordion-button::before {
     content: url('1.png');
@@ -480,6 +515,7 @@ hr {
     margin-right: 10px;
     /* Ajusta el margen derecho para separar la imagen del texto */
 }
+
 
 
 
@@ -513,6 +549,13 @@ footer {
     font-size: 18px;
     text-align: center;
 }
+
+.product-2 p{
+   color: rgb(92, 92, 92);
+}
+.product-1 p{
+    color: rgb(92, 92, 92);
+ }
 
 
 
