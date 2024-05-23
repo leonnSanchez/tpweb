@@ -159,6 +159,10 @@ h1 {
 /*------------------------------------------*/
 
  /* Albumes que no paran de sonar */
+
+ .famous{
+    color: rgb(190, 190, 190);
+ }
 .product {
     font-size: 25px;
     color: white;
@@ -199,6 +203,7 @@ h1 {
     margin-right: 46px;
     max-width: 390px;
     max-height: 300px;
+    
 }
 
 .product-1 {
@@ -213,6 +218,7 @@ h1 {
     background-repeat: no-repeat;
     width: 1903px;
     height: 760px;
+    
 
 }
 
@@ -222,7 +228,7 @@ h1 {
     /* Para posicionar el texto de manera absoluta */
     top: 250px;
     /* Ajusta la posición del texto verticalmente */
-    left: 140px;
+    left: 150px;
     /* Ajusta la posición del texto horizontalmente */
     
     /* Color del texto */
@@ -241,10 +247,12 @@ h1 {
 /*------------------------------------------*/
 
 .product-2 img {
+    border-radius: 0%;
     margin-top: 12px;
     margin-right: 46px;
     max-width: 390px;
     max-height: 300px;
+    
 }
 
 .product-2 {
@@ -508,13 +516,9 @@ hr {
 }
 
 
-.accordion-item .accordion-button::before {
-    content: url('1.png');
-    /* Ruta de la imagen del número 1 */
 
-    margin-right: 10px;
-    /* Ajusta el margen derecho para separar la imagen del texto */
-}
+
+
 
 
 
@@ -574,8 +578,9 @@ footer {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: rgb(39, 3, 167);
+        background-color: rgb(49, 4, 212);
         display: none;
+        
     }
 
     .menu .navbar ul li a:hover {
@@ -594,15 +599,116 @@ footer {
     .header {
         min-height: 0vh;
         padding: 80px 30px 50px 30px;
+        background-image: url(responsiv.png);
+        
     }
 
     .header-txt {
-        text-align: center;
+        
         flex-basis: 100%;
+        
     }
 
     .header-txt h1 {
-        font-size: 50px;
-        margin-bottom: 14;
+        padding-top: 10px;
+        font-size: 65px;
+        margin-bottom: 40;
     }
+    .header-txt p{
+        font-size: 25px;
+    }
+    
+    .butons{
+        justify-content: center;
+    }
+    .popular-content {
+        display: flex;
+        overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+    }
+    
+    .popular-content img {
+        flex-shrink: 0; /* Evita que las imágenes se reduzcan */
+        width: 100%; /* Ajusta el ancho de las imágenes */
+        max-width: 100%; /* Ajusta el ancho máximo de las imágenes */
+        height: auto; /* Mantiene la relación de aspecto */
+    }
+    .product-1 .text-overlay{
+        left:20px;
+        top: 40px;
+        
+    }
+
+    .product-2 .text-overlay{
+        left:20px;
+        top: 40px;
+        
+    }
+    .product-1{
+        background-image: url(responsiv2.png);
+        
+    }
+    .product-2{
+        background-image: url(responsiv2.png);
+    }
+    .product-1,
+    .product-2 {
+    
+    background-size: cover;
+    background-position: center; 
+    padding-top: 150px;
 }
+.accordion h3 {
+    font-size: 40px; /* Cambia el tamaño del texto en dispositivos móviles */
+}
+.accordion-button{
+    font-size: 20px;
+}
+.accordion{
+    width: 93%;
+}
+
+
+.contact {
+     /* Cambia la visualización a flexbox */
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.formulario {
+    margin-top: 30px; /* Agrega un margen superior para separar del texto */
+}
+
+.textocta {
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+form {
+    width: 100%; /* Asegura que el formulario ocupe todo el ancho disponible */
+}
+
+input, .btn-3 {
+    width: 100%; /* Ajusta el ancho de los campos de entrada y el botón */
+}
+.textocta h3{
+    font-size: 50px;
+}
+.textocta p{
+    font-size: 20px;
+}
+.apps {
+    justify-content:end;
+}
+.popular .prev {
+   
+
+    top: 45%;
+    
+}
+
+.popular .next {
+   
+
+    top: 45%;
+    
+}
+    }
