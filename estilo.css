@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lilita+One&family=Poetsen+One&display=swap');
+
 
 * {
     margin: 0;
@@ -8,8 +11,20 @@
     list-style: none;
 }
 
+
+.header h1{
+    font-family: "Lilita One", sans-serif;
+}
+
+
+
+
+
+
+
+
+
 body {
-    font-family: "Roboto", sans-serif;
     background-image: linear-gradient(#3601CD, #3601CD, #09001f);
 }
 
@@ -24,7 +39,7 @@ img {
 
 .header {
     background-color: #0C0C0C;
-    background-image: url(landing.png);
+    background-image: url(prube.png);
     /* Ajusta los valores de rgba según desees para el color y la opacidad */
     
     background-repeat: no-repeat;
@@ -54,7 +69,7 @@ img {
     font-weight: 0;
     padding: 0px;
     width: 150px;
-    height: 50px;
+    height: 55px;
 }
 
 .menu .navbar ul li {
@@ -100,7 +115,7 @@ img {
 }
 
 .header-txt h1 {
-    font-size: 130px;
+    font-size: 137px;
     color: white;
     line-height: 1.1;
     margin-bottom: 40px;
@@ -128,7 +143,7 @@ img {
     color: white;
     border-radius: 30pc;
     text-decoration: none;
-
+    font-family: "Lilita One", sans-serif;
 }
 
 .btn-1:hover {
@@ -137,6 +152,7 @@ img {
 }
 
 h1 {
+    font-family: "Archivo Black", sans-serif;
     font-size: 35px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -153,12 +169,14 @@ h1 {
 }
 .popular-content img {
     height: 600px;
-    padding: 18px;
+    padding: 9px;
     width: 350px;
 }
 /*------------------------------------------*/
 
  /* Albumes que no paran de sonar */
+
+
 
  .famous{
     color: rgb(190, 190, 190);
@@ -228,11 +246,11 @@ h1 {
     /* Para posicionar el texto de manera absoluta */
     top: 250px;
     /* Ajusta la posición del texto verticalmente */
-    left: 150px;
+    left: 140px;
     /* Ajusta la posición del texto horizontalmente */
     
     /* Color del texto */
-    font-size: 30px;
+    
     /* Tamaño del texto */
     font-weight:200;
     /* Peso del texto */
@@ -336,6 +354,7 @@ h1 {
     font-size: 2rem;
     margin-bottom: 30px;
     color: white;
+    
 }
 
 .container-faq .item-faq {
@@ -408,9 +427,12 @@ h1 {
     text-align: justify;
     color: white;
     
+    
+    
 }
 .formulario h2{
     font-size: 23px;
+    
 }
 .textocta{
     color:white;
@@ -418,7 +440,9 @@ h1 {
     
 }
 .textocta h3{
-    font-size: 100px;
+    font-size: 90px;
+    font-family: "Archivo Black", sans-serif;
+  
     
 
 }
@@ -478,6 +502,7 @@ hr {
     font-size: 60px;
     background-color: #ffffff00;
     margin-bottom: 40px;
+    font-family: "Archivo Black", sans-serif;
 }
 
 .accordion-item {
@@ -524,6 +549,8 @@ hr {
 
 
 
+
+
 footer {
     background-color: black;
     
@@ -560,6 +587,34 @@ footer {
 .product-1 p{
     color: rgb(92, 92, 92);
  }
+ .feedback{
+background-color: #09001f;
+border-radius: 50px;
+color: white;
+padding: 50px;
+margin: 0 auto;
+display: flex;
+    margin-top: 20px;
+    
+ }
+ .oculto{
+    display:none !important;
+ }
+ 
+ @keyframes aparecer {
+    0% {
+        opacity: 0; /* Empieza con una opacidad de 0 */
+    }
+    100% {
+        opacity: 1; /* Termina con una opacidad de 1 */
+    }
+}
+
+.feedback {
+    opacity: 0; /* Inicialmente, la sección de agradecimiento está oculta */
+    animation: aparecer 1s ease forwards;  
+    
+}
 
 
 
@@ -599,9 +654,10 @@ footer {
     .header {
         min-height: 0vh;
         padding: 80px 30px 50px 30px;
-        background-image: url(responsiv.png);
+        background-image: url(responsivee.png);
         
     }
+   
 
     .header-txt {
         
@@ -610,12 +666,17 @@ footer {
     }
 
     .header-txt h1 {
-        padding-top: 10px;
-        font-size: 65px;
-        margin-bottom: 40;
+        padding-top: 20px;
+        font-size: 60px;
+        margin-bottom: 10px;
+        margin-left: -15px;
+
     }
     .header-txt p{
-        font-size: 25px;
+        padding-top: 40px;
+        font-size: 20px;
+        padding-bottom: 25px;
+        margin-left: -15px;
     }
     
     .butons{
@@ -623,7 +684,7 @@ footer {
     }
     .popular-content {
         display: flex;
-        overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+        
     }
     
     .popular-content img {
@@ -643,29 +704,28 @@ footer {
         top: 40px;
         
     }
-    .product-1{
-        background-image: url(responsiv2.png);
-        
+    .product-1 {
+        background-color: #3700b6;
+        background-size: cover;
+        background-position: center; 
+        padding-top: 150px;
     }
-    .product-2{
-        background-image: url(responsiv2.png);
-    }
-    .product-1,
-    .product-2 {
+   
     
-    background-size: cover;
-    background-position: center; 
-    padding-top: 150px;
-}
+    
+ 
 .accordion h3 {
-    font-size: 40px; /* Cambia el tamaño del texto en dispositivos móviles */
+   
+    font-size: 45px; /* Cambia el tamaño del texto en dispositivos móviles */
 }
 .accordion-button{
     font-size: 20px;
 }
 .accordion{
-    width: 93%;
+    width: 88%;
+   
 }
+
 
 
 .contact {
@@ -673,9 +733,37 @@ footer {
     flex-direction: column; /* Coloca los elementos en una columna */
     align-items: center; /* Centra los elementos horizontalmente */
 }
-
 .formulario {
-    margin-top: 30px; /* Agrega un margen superior para separar del texto */
+    align-self: center; /* Alinea el formulario al centro */
+    display: flex;
+    flex-direction: column;
+    background-color: #3630446b;
+    border-radius: 30px;
+    padding: 20px;
+    
+    
+    max-width: 500px; /* Ajusta el ancho máximo del formulario */
+    width: 90%; /* Ajusta el ancho del formulario */
+    margin: auto; /* Centra el formulario horizontalmente */
+}
+
+.formulario h2 {
+    font-size: 20px; /* Reduce el tamaño del título del formulario */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+input, .btn-3 {
+    padding: 12px 20px; /* Reduce el padding de los campos de entrada y del botón */
+    font-size: 17px; /* Reduce el tamaño de la fuente de los campos de entrada y del botón */
+}
+
+hr {
+    margin: 40px 0; /* Ajusta el margen superior e inferior del separador horizontal */
 }
 
 .textocta {
@@ -690,25 +778,91 @@ input, .btn-3 {
     width: 100%; /* Ajusta el ancho de los campos de entrada y el botón */
 }
 .textocta h3{
-    font-size: 50px;
+    
+    font-size: 60px;
 }
 .textocta p{
     font-size: 20px;
 }
 .apps {
-    justify-content:end;
+    justify-content: end;
 }
-.popular .prev {
+.popular .prev , .popular .next {
    
 
-    top: 45%;
+    top: 50%;
     
 }
 
-.popular .next {
-   
 
-    top: 45%;
-    
+ 
+.product {
+    display: flex;
+    flex-wrap: wrap; /* Asegura que los productos se envuelvan en una nueva línea si no caben en una sola línea */
+    justify-content: center; /* Centra los productos horizontalmente */
 }
+
+.product .card {
+    width: 100%; /* Ajusta el ancho de cada tarjeta para que ocupe el 100% del contenedor */
+    max-width: 300px; /* Establece un ancho máximo para las tarjetas */
+
+    left: 40px;
     }
+
+.product .card img {
+    width: 250px; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height:250px; /* Mantiene la relación de aspecto de la imagen */
+    
+}
+
+
+.product-1 .text-overlay{
+    left:25px;
+    top: 40px;
+    
+}
+
+.product-2 .text-overlay{
+    left:25px;
+    top: 40px;
+     
+}
+.product-1{
+    background-image: url(responsiv2.png);
+    display: flex;
+    flex-direction: column; /* Alinear las secciones verticalmente */
+    padding: 10px; /* Ajusta el padding según necesites */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; /* Haz que el ancho sea el 100% del contenedor */
+    height: auto; /* Permitir que la altura sea automática para adaptarse al contenido */
+padding-top: 120px;
+padding-bottom: 50px;
+
+}
+.product-2 {
+    background-color: #00063E;
+    display: flex;
+    flex-direction: column; /* Alinear las secciones verticalmente */
+    padding: 10px; /* Ajusta el padding según necesites */
+    padding-top: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; /* Haz que el ancho sea el 100% del contenedor */
+    height: auto; 
+    padding-top: 120px;
+    padding-bottom: 50px;
+   
+}
+
+.card h3{
+    font-size: 20px; 
+    transform: translate(-9%,-40%);
+}
+.card p{
+    font-size: 20px; 
+    transform: translate(-9%,-60%);
+}
+}
